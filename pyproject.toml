@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "keras-tutorial"
+version = "0.1.0"
+description = "coding-apple tutorial"
+license = "MIT"
+authors = ["cyberprophet <prophet0915@gmail.com>"]
+readme = "README.md"
+homepage = "http://shareinvest.net"
+repository = "https://github.com/cyberprophet?tab=repositories"
+packages = [{ include = "keras_tutorial", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "3.8.10"
+tensorflow = "^2.11.0"
+pandas = "^1.5.3"
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
